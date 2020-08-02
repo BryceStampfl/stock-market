@@ -1,0 +1,86 @@
+$left-padding: 15px;
+$left-padding-icon: 5px;
+
+$img-dim: 30px;
+$sidebar-color: lightblue;
+
+
+.sidebar{
+   background-color: lightblue;
+  // height: calc(100vh - 175px);
+   border-bottom-right-radius: 5px;
+
+   .activeLink{
+    outline: none;
+    background-color: rgb(155, 155, 155) !important;
+    border-radius: 3px; 
+}
+
+
+    .logo{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: center;
+
+        .logo-img{
+            height: $img-dim;
+            width: $img-dim;
+        }
+    }
+
+    .sidebar-wrapper{
+        
+
+        .nav{
+                .nav-item{
+                    font-size: 0.70rem;
+                    list-style: none;
+                    background-color: $sidebar-color;
+                    margin: 0px 10px 10px;
+                    padding: 10px 15px 10px;
+                   
+                    .row{
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                    
+                        img{
+                             height: 17px;
+                              width: 17px;
+                        }
+
+                        p{
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 0.80rem;
+                            margin-bottom: 0;
+                            padding-left: 10px;
+                            color: black;
+                        }
+                    }
+    
+                    .nav-link{
+                        padding-left: 10;
+                        padding-right: 0; 
+                    }
+                }
+
+                .nav-item:hover{
+                background-color: rgb(172, 188, 204);
+                border: solid lightslategrey 1px;
+                border-radius: 3px;
+                text-decoration: none !important
+                }
+        }
+    }
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FFCC00;
+}
